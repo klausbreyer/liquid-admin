@@ -1,0 +1,68 @@
+campaign:
+  id:
+    title: ID
+    listed: true
+  status:
+    listed: true
+    source: staticValues
+    edit: select
+    values:
+      1: Disabled
+      2: Waiting for Publishing
+      3: Published
+      4: Influencer Selection
+      5: Placement in Production
+      6: Finished
+      7: Not Completed
+      8: Deleted
+
+  brand_id:
+    listed: true
+    title: Marken Account
+    edit: select
+    source: otherTable
+    table_name: brand
+    table_key: id
+    table_column: brand_name
+  brand_name:
+    listed: true
+    edit: input
+  product_name:
+    listed: true
+    edit: input
+  created:
+    listed: true
+  modified:
+    listed: true
+  url:
+    edit: input
+  dos:
+    edit: inputArray
+  donts:
+    edit: inputArray
+  ig_tag:
+    edit: input
+  ig_person:
+    edit: input
+  yt_tag:
+    edit: input
+  yt_url:
+    edit: input
+  logo:
+    edit: input
+  edit_status:
+    edit: inputNumber
+  edit_max:
+    edit: inputNumber
+  application_deadline:
+    edit: input
+  influencer_selection:
+    edit: input
+  release_date:
+    edit: input
+  age_categories:
+    edit: checkboxes
+  gender_categories:
+    edit: checkboxes
+  vertical_categories:
+    edit: checkboxes
