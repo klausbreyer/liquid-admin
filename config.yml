@@ -26,45 +26,11 @@ campaign:
     table_name: brand
     table_key: id
     table_column: brand_name
-  brand_name:
-    showInOverview: true
-    editElement: input
-  product_name:
-    showInOverview: true
-    editElement: input
+  description:
+    editElement: textarea
+  pro_bono:
+    editElement: checkbox
   created:
     showInOverview: true
   modified:
     showInOverview: true
-  url:
-    editElement: input
-  dos:
-    editElement: inputArray
-  donts:
-    editElement: inputArray
-  ig_tag:
-    editElement: input
-  ig_person:
-    editElement: input
-  yt_tag:
-    editElement: input
-  yt_url:
-    editElement: input
-  logo:
-    editElement: input
-  edit_status:
-    editElement: inputNumber
-  edit_max:
-    editElement: inputNumber
-  application_deadline:
-    editElement: input
-  influencer_selection:
-    editElement: input
-  release_date:
-    editElement: input
-  age_categories:
-    editElement: checkboxes
-  gender_categories:
-    editElement: checkboxes
-  vertical_categories:
-    editElement: checkboxes
