@@ -1,11 +1,14 @@
+# Settings for Table 'campaign'
+# Just list the columns and their settings
 campaign:
   id:
     title: ID
-    listed: true
+    showInOverview: true
   status:
-    listed: true
+    showInOverview: true
+    description: Mit einer Änderung hier, kannst du beeinflussen in welcher Phase die Kampagne ist.
     source: staticValues
-    edit: select
+    editElement: select
     values:
       1: Disabled
       2: Waiting for Publishing
@@ -15,54 +18,53 @@ campaign:
       6: Finished
       7: Not Completed
       8: Deleted
-
   brand_id:
-    listed: true
+    showInOverview: true
     title: Marken Account
-    edit: select
+    editElement: select
     source: otherTable
     table_name: brand
     table_key: id
     table_column: brand_name
   brand_name:
-    listed: true
-    edit: input
+    showInOverview: true
+    editElement: input
   product_name:
-    listed: true
-    edit: input
+    showInOverview: true
+    editElement: input
   created:
-    listed: true
+    showInOverview: true
   modified:
-    listed: true
+    showInOverview: true
   url:
-    edit: input
+    editElement: input
   dos:
-    edit: inputArray
+    editElement: inputArray
   donts:
-    edit: inputArray
+    editElement: inputArray
   ig_tag:
-    edit: input
+    editElement: input
   ig_person:
-    edit: input
+    editElement: input
   yt_tag:
-    edit: input
+    editElement: input
   yt_url:
-    edit: input
+    editElement: input
   logo:
-    edit: input
+    editElement: input
   edit_status:
-    edit: inputNumber
+    editElement: inputNumber
   edit_max:
-    edit: inputNumber
+    editElement: inputNumber
   application_deadline:
-    edit: input
+    editElement: input
   influencer_selection:
-    edit: input
+    editElement: input
   release_date:
-    edit: input
+    editElement: input
   age_categories:
-    edit: checkboxes
+    editElement: checkboxes
   gender_categories:
-    edit: checkboxes
+    editElement: checkboxes
   vertical_categories:
-    edit: checkboxes
+    editElement: checkboxes
