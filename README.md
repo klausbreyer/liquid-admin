@@ -1,5 +1,5 @@
 # liquid-admin
-## Welches Problem möchte ich mit diesem Projekt lösen? 
+## Problem Definition
 Startups und digitale Geschäftsmodelle können auf Verarbeitung und Repräsentation von Daten reduziert werden, die für jemanden von Wert sind, der bereit ist dafür zu bezahlen.
 
 Ein Startup hat genug damit zu tun, sich um Verarbeitung um vordergründige Präsentation der Daten zu kümmern. Daneben gibt es aber auch noch ein Team, das Operationen und Korrekturen auf die Daten anwendet.
@@ -12,32 +12,31 @@ In den letzten 6 Jahren habe ich direkt als Entwickler oder indirekt als technis
 Die Lösung ist ein einfaches Admin Interface, das eine konfigurierbare Ansicht und Bearbeitung der Daten für das Team ermöglicht. 
 
 Wie eine Datenbank Spalte sich im Frontend darstellt, kann durch nur wenige Eigenschaften definiert werden: 
-Wird die entsprechende Spalte überhaupt angezeigt?
-Bezeichnung und Beschreibung der Datenbankspalte
-Von welchem Datentyp ist der Inhalt? 
-Freitext
-Datum
-Zahl
-Ja/Nein (Boolean)
-Statusvariable/Auswahl aus einer Menge von festen Werten
-Querverbindung zu einer anderen Tabelle (Foreign Key)
-Darf dieser Inhalt manipuliert werden? Falls ja: wie? 
-Input Text
-Input Zahl
-Input Array
-Textarea
-Radio Button (Ja/Nein)
-Select Box (ein einzelner Wert)
-Checkboxen (mehrere Werte)
-Datum Auswahl
+
+- Wird die entsprechende Spalte überhaupt angezeigt?
+- Bezeichnung und Beschreibung der Datenbankspalte
+ Von welchem Datentyp ist der Inhalt? 
+- Freitext
+- Datum
+- Zahl
+- Ja/Nein (Boolean)
+- Statusvariable/Auswahl aus einer Menge von festen Werten
+- Querverbindung zu einer anderen Tabelle (Foreign Key)
+- Darf dieser Inhalt manipuliert werden? Falls ja: wie? 
+- Input Text
+- Input Zahl
+- Input Array
+- Textarea
+- Radio Button (Ja/Nein)
+- Select Box (ein einzelner Wert)
+- Checkboxen (mehrere Werte)
+- Datum Auswahl
 
 Diese Konfigurierbarkeit ist wichtig. Kein Unternehmen und kein Entwickler möchte dem Team direkten Zugriff auf die Datenbank erlauben. Einerseits weil es gefährlich ist, andererseits weil es auch für die Teammitglieder zu komplex wäre, da sie nicht das Wissen über die Zusammenhänge der Daten haben. 
 
 Die meisten vorhandenen Tools wie phpMyAdmin, welche eine komplette Manipulation von Daten erlauben eignen sich deshalb nicht für Endnutzer. 
 
-## Wer ist die Zielgruppe? Wie profitiert sie vom Projekt?
-Max. 2000 Zeichen
-
+## Zielgruppe
 Zielgruppe sind Startups, Agenturen und freelance Programmierer. 
 
 Startups: 
@@ -46,7 +45,6 @@ Wenn ein Feature fertig ist, soll es am liebsten sofort gelaunched werden. Dank 
 
 Agenturen und freelance Programmierer:
 Kunden bezahlen üblicherweise nur für die tatsächlich erbrachte Leistung, z.B. die Homepage oder die App. Ein Backend trägt in dem Sinne nicht zur Wertschöpfung bei und muss deshalb ohnehin schon sehr minimal gehalten werden. Mein Ziel ist es, diesen Aufwand ganz zu eliminieren. 
-
 
 ## Aktueller Stand
 Zuletzt war mein persönlicher Leidensdruck in dieser Sache so hoch, dass ich die hier beschriebene Mechanik bereits im Rahmen eines größeren Projektes einmal selbst implementiert habe. 
@@ -58,22 +56,10 @@ Aus den Learnings konnte bereits eine optimierte Konfigurationsdatei abgeleitet 
 Zusätzlich existieren grobe Wireframes um im Zuge dieser Bewerbung die Mechanik deutlicher zu machen: 
 https://github.com/klausbreyer/liquid-admin/tree/master/wireframes
 
-Wie viele Arbeitsstunden wirst Du in einem Zeitraum von 6 Monaten vermutlich für die Umsetzung der Projektidee benötigen?*
-Bitte eine Zahl eintragen.
-500 Stunden
-
-
 ## Milestones 
-Max. 1500 Zeichen
-
-Start mit MySQL und händische Konfiguration über eine config-Datei mit einfachen Editiermöglichkeiten (Text Input, Select, etc. )
-Verknüpfte Daten und Quick Links: Wo taucht die aktuell dargestellte Entität als Fremdschlüssel in anderen Tabellen auf? 
-Validatoren / Constraints für Felder
-Erweiterte Felder-Typen (Kalender-Auswahl, WYSIWYG, Datei-Upload, etc.)
-Nutzerverwaltung und Access Control List - 
-Unterstützung von PostgreSQL und anderen Datenbanken
-
-
-
-
-A backend that adapts to your needs and is no pain. 
+- Start mit MySQL und händische Konfiguration über eine config-Datei mit einfachen Editiermöglichkeiten (Text Input, Select, etc. )
+- Verknüpfte Daten und Quick Links: Wo taucht die aktuell dargestellte Entität als Fremdschlüssel in anderen Tabellen auf? 
+- Validatoren / Constraints für Felder
+- Erweiterte Felder-Typen (Kalender-Auswahl, WYSIWYG, Datei-Upload, etc.)
+- Nutzerverwaltung und Access Control List - 
+- Unterstützung von PostgreSQL und anderen Datenbanken
